@@ -1,0 +1,5 @@
+# Ignorar configuraciones de VSCode
+.vscode/
+
+# Ignorar Wireframe
+Wireframe/
