@@ -3,3 +3,9 @@
 
 # Ignorar Wireframe
 Wireframe/
+
+# json
+node_modules/
+
+# archivo propio de práctica
+_estilos2.scss

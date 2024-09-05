@@ -1,0 +1,36 @@
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1em 0;
+  font-weight: 700; }
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+    background-color: #000; }
+    header .navbar .logo a {
+      font-size: 2em;
+      color: #fff; }
+      header .navbar .logo a:hover {
+        color: #00fff0; }
+    header .navbar .logo div {
+      font-size: 0.8em;
+      position: relative;
+      left: 7rem; }
+    header .navbar .logo .menu-toggle {
+      display: none;
+      font-size: 1.5em;
+      color: #fff;
+      background: none;
+      border: none;
+      cursor: pointer; }
+    header .navbar .logo .nav-links {
+      display: flex;
+      gap: 1.5em; }
+      header .navbar .logo .nav-links li a {
+        color: #fff;
+        display: inline-block;
+        transition: transform 0.3s ease; }
+        header .navbar .logo .nav-links li a:hover {
+          transform: scale(1.3); }
