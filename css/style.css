@@ -139,7 +139,7 @@ ul {
 }
 
 .store-section h2,
-.about-section h2,
+/* about-section h2, */
 .contact-section h2,
 .subscribe-section h2 {
     font-size: 2.5em;
@@ -186,7 +186,6 @@ ul {
     font-size: 1.5em;
 }
 
-/* Sección de contacto */
 .back-arrow {
     position: absolute;
     top: 1em;
@@ -206,6 +205,7 @@ ul {
     z-index: 1000;
 }
 
+/* Sección de contacto */
 /* Sección #1 */
 .contact-section {
     display: grid;
@@ -354,7 +354,7 @@ ul {
 }
 
 .suscribe p {
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
 }
 
 .suscribe input {
@@ -385,10 +385,10 @@ ul {
     color: #666;
 }
 
+
 /* sección "sobre nosotros" */
 
 .about-section h1,
-.about-section h2,
 .about-section h3 {
     font-size: 2em;
     color: #ff6600;
@@ -397,7 +397,6 @@ ul {
 
 .about-section h1 {
     font-size: 3em;
-    /* sobreescribo */
 }
 
 .about-section p {
@@ -427,7 +426,6 @@ ul {
 
 .testimonial-wrapper h1 {
     font-size: 3em;
-    /* color: #ff6600; */
     margin-bottom: 1.5em;
     text-transform: uppercase;
 }

@@ -7,5 +7,6 @@ Wireframe/
 # json
 node_modules/
 
-# archivo propio de práctica
+# archivos propios de práctica y control
 _estilos2.scss
+style_copy.css

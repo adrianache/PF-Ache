@@ -1,0 +1,113 @@
+.back-arrow {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.25em;
+    cursor: pointer;
+    background: #2b2828;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+main {
+    .testimonial-section {
+        background-color: #fff;
+        padding: 3em 1em;
+        text-align: center;
+
+        .testimonial-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            h1 {
+                font-size: 3em;
+                /* color: #ff6600; */
+                margin-bottom: 1.5em;
+                text-transform: uppercase;
+            }
+
+            h2 {
+                font-size: 2.5em;
+                color: #ff6600;
+                margin-bottom: 1em;
+            }
+
+            .testimonials {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 2em;
+
+                .testimonial {
+                    background-color: #2b2828;
+                    color: #fff;
+                    padding: 1.5em;
+                    border-radius: 10px;
+                    width: 30%;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    margin-bottom: 2.5em;
+
+                    p {
+                        font-size: 1.2em;
+                        margin-bottom: 1em;
+                        font-style: italic;
+                    }
+
+                    span {
+                        display: block;
+                        font-weight: bold;
+                        font-size: 1em;
+                        margin-top: 0.5em;
+                    }
+                }
+            }
+        }
+    }
+
+    .faq-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2em;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        h2 {
+            font-size: 2.5em;
+            color: #ff6600;
+            margin-bottom: 1em;
+        }
+
+        .faq {
+            text-align: left;
+            margin-top: 2em;
+
+            .faq-item {
+                margin-bottom: 2em;
+
+                h3 {
+                    font-size: 1.8em;
+                    color: #ff6600;
+                    margin-bottom: 0.5em;
+                }
+
+                p {
+                    font-size: 1.2em;
+                    color: #333;
+                }
+            }
+        }
+    }
+}

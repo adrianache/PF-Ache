@@ -1,36 +1,118 @@
-header {
-  background-color: #000;
+main .hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../img/fondoprincipal.jpeg") no-repeat center center/cover fixed;
   color: #fff;
-  padding: 1em 0;
-  font-weight: 700; }
-  header .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2em;
-    background-color: #000; }
-    header .navbar .logo a {
-      font-size: 2em;
-      color: #fff; }
-      header .navbar .logo a:hover {
-        color: #00fff0; }
-    header .navbar .logo div {
-      font-size: 0.8em;
-      position: relative;
-      left: 7rem; }
-    header .navbar .logo .menu-toggle {
-      display: none;
-      font-size: 1.5em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+  main .hero-section .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeIn 2s ease-in-out; }
+    main .hero-section .hero-content h1 {
+      font-size: 3em; }
+    main .hero-section .hero-content p {
+      font-size: 1.2em;
+      margin: 1em 0; }
+    main .hero-section .hero-content .btn {
+      display: inline-block;
+      padding: 0.75em 1.5em;
+      background-color: #ff6600;
       color: #fff;
-      background: none;
-      border: none;
+      border-radius: 5px;
+      margin-top: 1em;
+      font-weight: 700;
+      transition: background-color 0.4s ease;
       cursor: pointer; }
-    header .navbar .logo .nav-links {
-      display: flex;
-      gap: 1.5em; }
-      header .navbar .logo .nav-links li a {
-        color: #fff;
+      main .hero-section .hero-content .btn:hover {
+        background-color: #00fff0;
+        color: #000; }
+
+main .store-section {
+  background: url("../img/fondoprimario.jpg");
+  padding: 2em 1em;
+  text-align: center; }
+  main .store-section h2 {
+    color: #00fff0;
+    text-shadow: 3px 3px 1px #000;
+    font-size: 2.5em;
+    margin-bottom: 1em; }
+  main .store-section .products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em; }
+    main .store-section .products .product {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 1em;
+      width: 200px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease; }
+      main .store-section .products .product:hover {
+        transform: translateY(-5px); }
+      main .store-section .products .product img {
+        max-width: 100%;
+        height: auto; }
+      main .store-section .products .product h3 {
+        margin: 0.5em 0; }
+      main .store-section .products .product .btn {
         display: inline-block;
-        transition: transform 0.3s ease; }
-        header .navbar .logo .nav-links li a:hover {
-          transform: scale(1.3); }
+        padding: 0.75em 1.5em;
+        background-color: #ff6600;
+        color: #fff;
+        border-radius: 5px;
+        margin-top: 1em;
+        font-weight: 700;
+        transition: background-color 0.4s ease;
+        cursor: pointer; }
+        main .store-section .products .product .btn:hover {
+          background-color: #00fff0;
+          color: #000; }
+
+main .subscribe-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px; }
+  main .subscribe-section .suscribe {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; }
+    main .subscribe-section .suscribe img {
+      width: 50%;
+      height: auto;
+      margin-right: 20px; }
+    main .subscribe-section .suscribe div {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 20px; }
+      main .subscribe-section .suscribe div div {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #007bff; }
+      main .subscribe-section .suscribe div h2 {
+        margin-bottom: 10px; }
+      main .subscribe-section .suscribe div p {
+        margin-bottom: 10px; }
+      main .subscribe-section .suscribe div input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px; }
+      main .subscribe-section .suscribe div .btn {
+        display: inline-block;
+        padding: 0.75em 1.5em;
+        background-color: #ff6600;
+        color: #fff;
+        border-radius: 5px;
+        margin-top: 1em;
+        font-weight: 700;
+        transition: background-color 0.4s ease;
+        cursor: pointer; }
+        main .subscribe-section .suscribe div .btn:hover {
+          background-color: #00fff0;
+          color: #000; }
