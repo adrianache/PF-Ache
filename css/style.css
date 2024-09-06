@@ -503,8 +503,6 @@ ul {
 }
 
 .social-links li a {
-    color: #fff;
-    font-size: 1.5em;
     transition: color 0.3s ease;
 }
 
