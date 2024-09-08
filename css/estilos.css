@@ -1,3 +1,89 @@
+@charset "UTF-8";
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4 !important; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+.btn {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  background-color: #ff6600;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 1em;
+  font-weight: 700;
+  transition: background-color 0.4s ease;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: #00fff0;
+    color: #000; }
+
+.back-arrow {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  font-size: 1.5em;
+  color: #fff;
+  padding: 0.25em;
+  cursor: pointer;
+  background: #2b2828;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; }
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1em 0;
+  font-weight: 700; }
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+    background-color: #000; }
+    header .navbar .logo a {
+      font-size: 2em;
+      color: #fff; }
+      header .navbar .logo a:active {
+        color: #00fff0; }
+    header .navbar .logo div {
+      font-size: 0.8em;
+      position: relative;
+      left: 7rem; }
+    header .navbar .menu-toggle {
+      display: none;
+      font-size: 1.5em;
+      color: #fff;
+      background: none;
+      border: none;
+      cursor: pointer; }
+    header .navbar .nav-links {
+      display: flex;
+      gap: 1.5em; }
+      header .navbar .nav-links li a {
+        color: #fff;
+        display: inline-block;
+        transition: transform 0.3s ease; }
+        header .navbar .nav-links li a:hover {
+          transform: scale(1.3);
+          color: #00fff0; }
+
 main .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../img/fondoprincipal.jpeg") no-repeat center center/cover fixed;
   color: #fff;
@@ -116,3 +202,305 @@ main .subscribe-section {
         main .subscribe-section .suscribe div .btn:hover {
           background-color: #00fff0;
           color: #000; }
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform 0.3s ease; }
+  .product-card:hover {
+    transform: scale(1.05); }
+  .product-card div .product-title {
+    font-size: 1.2rem;
+    font-weight: bold; }
+  .product-card div .product-description {
+    font-size: 0.9rem;
+    color: #666; }
+  .product-card div .btn {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 1em;
+    font-weight: 700;
+    transition: background-color 0.4s ease;
+    cursor: pointer; }
+    .product-card div .btn:hover {
+      background-color: #00fff0;
+      color: #000; }
+
+main .contact-section {
+  display: grid;
+  place-items: center;
+  min-height: 60vh;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../img/fondocontact.jpg") no-repeat center center/cover; }
+  main .contact-section .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 750px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px; }
+    main .contact-section .wrapper form h1 {
+      font-size: 36px;
+      text-align: center; }
+    main .contact-section .wrapper form .input-box {
+      grid-column: span 1;
+      /* Ocupa toda la columna en grid */
+      height: 60px;
+      margin: 15px 0; }
+      main .contact-section .wrapper form .input-box .input {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 40px;
+        font-size: 16px;
+        color: #fff;
+        padding: 20px 45px 20px 20px;
+        overflow: hidden; }
+        main .contact-section .wrapper form .input-box .input::placeholder {
+          color: #fff; }
+    main .contact-section .wrapper form button {
+      /* agregar la clase btn también? */
+      grid-column: span 1;
+      width: 100%;
+      height: 45px;
+      border: none;
+      border-radius: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      font-size: 16px; }
+
+.contact-section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background-color: #e0e0e0; }
+  .contact-section2 .info-container {
+    display: flex;
+    width: 85%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; }
+    .contact-section2 .info-container .map-container {
+      flex: 1;
+      min-width: 300px;
+      height: 300px;
+      border-right: 1.5px solid #cccccc; }
+    .contact-section2 .info-container .contact-info {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .contact-section2 .info-container .contact-info h2 {
+        margin-top: 0; }
+      .contact-section2 .info-container .contact-info p {
+        margin: 10px 0; }
+        .contact-section2 .info-container .contact-info p strong {
+          font-weight: bold;
+          color: #333; }
+
+.back-arrow {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  font-size: 1.5em;
+  color: #fff;
+  padding: 0.25em;
+  cursor: pointer;
+  background: #2b2828;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; }
+
+main .testimonial-section {
+  background-color: #fff;
+  padding: 3em 1em;
+  text-align: center; }
+  main .testimonial-section .testimonial-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+    main .testimonial-section .testimonial-wrapper h1 {
+      font-size: 3em;
+      /* color: #ff6600; */
+      margin-bottom: 1.5em;
+      text-transform: uppercase; }
+    main .testimonial-section .testimonial-wrapper h2 {
+      font-size: 2.5em;
+      color: #ff6600;
+      margin-bottom: 1em; }
+    main .testimonial-section .testimonial-wrapper .testimonials {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 2em; }
+      main .testimonial-section .testimonial-wrapper .testimonials .testimonial {
+        background-color: #2b2828;
+        color: #fff;
+        padding: 1.5em;
+        border-radius: 10px;
+        width: 30%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2.5em; }
+        main .testimonial-section .testimonial-wrapper .testimonials .testimonial p {
+          font-size: 1.2em;
+          margin-bottom: 1em;
+          font-style: italic; }
+        main .testimonial-section .testimonial-wrapper .testimonials .testimonial span {
+          display: block;
+          font-weight: bold;
+          font-size: 1em;
+          margin-top: 0.5em; }
+
+main .faq-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  main .faq-wrapper h2 {
+    font-size: 2.5em;
+    color: #ff6600;
+    margin-bottom: 1em; }
+  main .faq-wrapper .faq {
+    text-align: left;
+    margin-top: 2em; }
+    main .faq-wrapper .faq .faq-item {
+      margin-bottom: 2em; }
+      main .faq-wrapper .faq .faq-item h3 {
+        font-size: 1.8em;
+        color: #ff6600;
+        margin-bottom: 0.5em; }
+      main .faq-wrapper .faq .faq-item p {
+        font-size: 1.2em;
+        color: #333; }
+
+.back-arrow {
+  /* se repite */
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  font-size: 1.5em;
+  color: #fff;
+  padding: 0.25em;
+  cursor: pointer;
+  background: #2b2828;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; }
+
+main .about-section {
+  padding: 2em 1em;
+  text-align: center;
+  background-color: #eee;
+  padding: 3em; }
+  main .about-section .container h1 {
+    font-size: 3em;
+    color: #ff6600;
+    margin-bottom: 1em; }
+  main .about-section .container p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 1.5em;
+    line-height: 1.6;
+    text-align: justify; }
+  main .about-section .container h3 {
+    font-size: 2em;
+    color: #ff6600;
+    margin-bottom: 1em; }
+
+footer .container div .social-links {
+  display: flex;
+  gap: 1em; }
+  footer .container div .social-links li a {
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s ease; }
+    footer .container div .social-links li a:hover {
+      color: #00fff0; }
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: none;
+    position: relative;
+    padding: 0; }
+    .nav-links.active {
+      display: flex; }
+    .nav-links li {
+      margin: 0;
+      text-align: center; }
+      .nav-links li a {
+        padding: 1em;
+        display: block;
+        color: #fff;
+        text-decoration: none; }
+  .menu-toggle {
+    display: block; }
+  .hero-section {
+    height: auto;
+    padding: 2em 1em; }
+    .hero-section .hero-content h1 {
+      font-size: 2em; }
+    .hero-section .hero-content p {
+      font-size: 1em; }
+  .products {
+    flex-direction: column;
+    align-items: center; }
+  .subscribe-section .suscribe {
+    flex-direction: column;
+    text-align: center;
+    align-items: center; }
+    .subscribe-section .suscribe img {
+      margin-bottom: 1rem; }
+    .subscribe-section .suscribe div {
+      text-align: center; }
+  .contact-section2 {
+    height: auto;
+    padding: 1em; }
+    .contact-section2 .info-container {
+      flex-direction: column;
+      width: 100%; }
+      .contact-section2 .info-container .map-container {
+        width: 100%;
+        height: 300px;
+        border-right: none;
+        border-bottom: 1.5px solid #cccccc;
+        flex: 2; }
+      .contact-section2 .info-container .contact-info {
+        width: 100%;
+        padding: 1em;
+        text-align: center;
+        flex: 1; }
+  .testimonials {
+    flex-direction: column;
+    align-items: center; }
+    .testimonials .testimonial {
+      width: 80%; } }
