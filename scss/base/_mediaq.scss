@@ -1,6 +1,6 @@
 
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-mobile) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -20,7 +20,7 @@
             a {
                 padding: 1em;
                 display: block;
-                color: $white;
+                color: $color-white;
                 text-decoration: none;
             }
         }

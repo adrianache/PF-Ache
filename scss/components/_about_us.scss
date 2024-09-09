@@ -1,49 +1,32 @@
 .back-arrow {
-    /* se repite */
-    position: absolute;
-    top: 1em;
-    left: 1em;
-    font-size: 1.5em;
-    color: #fff;
-    padding: 0.25em;
-    cursor: pointer;
-    background: #2b2828;
-    border-radius: 50%;
-    width: 2.5em;
-    height: 2.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
+    @include back-arrow;
 }
 
 main {
     .about-section {
-        padding: 2em 1em;
+        padding: $spacing-xlarge $spacing-normal;
         text-align: center;
-        background-color: #eee;
-        padding: 3em;
+        background-color: $color-background;
 
         .container {
             h1 {
-                font-size: 3em;
-                color: #ff6600;
-                margin-bottom: 1em;
+                font-size: $font-size-xxlarge;
+                color: $color-primary;
+                margin-bottom: $spacing-normal;
             }
 
             p {
-                // font-size: 1.5em;
-                font-size: 1.2em;
-                color: #333;
-                margin-bottom: 1.5em;
+                font-size: $font-size-medium;
+                color: $color-text;
+                margin-bottom: $spacing-medium;
                 line-height: 1.6;
                 text-align: justify;
             }
 
             h3 {
-                font-size: 2em;
-                color: #ff6600;
-                margin-bottom: 1em;
+                font-size: $font-size-xlarge;
+                color: $color-primary;
+                margin-bottom: $spacing-normal;
             }
         }
     }

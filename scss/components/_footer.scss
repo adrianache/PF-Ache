@@ -2,20 +2,21 @@ footer {
     .container {
         div {
             p {
-                
+                // Puedes agregar estilos específicos para el párrafo aquí si es necesario
             }
+            
             .social-links {
                 display: flex;
-                gap: 1em;
+                gap: $spacing-normal;
 
                 li {
                     a {
-                        color: #fff;
-                        font-size: 1.5em;
+                        color: $color-white;
+                        font-size: $font-size-large;
                         transition: color 0.3s ease;
                         
                         &:hover {
-                            color: #00fff0;
+                            color: $color-secondary;
                         }
                     }
                 }

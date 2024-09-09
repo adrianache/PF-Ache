@@ -1,13 +1,11 @@
 main {
     .hero-section {
-        background: linear-gradient(rgba(0, 0, 0, 0.4),
-                rgba(0, 0, 0, 0.5)),
+        background: linear-gradient(rgba($color-black, 0.4),
+                rgba($color-black, 0.5)),
             url('../img/fondoprincipal.jpeg') no-repeat center center/cover fixed;
-        color: #fff;
+        color: $color-white;
         text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         height: 100vh;
 
         .hero-content {
@@ -16,28 +14,21 @@ main {
             animation: fadeIn 2s ease-in-out;
 
             h1 {
-                font-size: 3em;
+                font-size: $font-size-xxlarge;
             }
 
             p {
-                font-size: 1.2em;
-                margin: 1em 0;
+                font-size: $font-size-medium;
+                margin: $spacing-normal 0;
             }
 
             .btn {
-                display: inline-block;
-                padding: 0.75em 1.5em;
-                background-color: #ff6600;
-                color: #fff;
-                border-radius: 5px;
-                margin-top: 1em;
-                font-weight: 700;
-                transition: background-color 0.4s ease;
-                cursor: pointer;
+                @include button($color-primary, $color-white);
+                margin-top: $spacing-normal;
 
                 &:hover {
-                    background-color: #00fff0;
-                    color: #000;
+                    background-color: $color-secondary;
+                    color: $color-black;
                 }
             }
         }
@@ -45,28 +36,28 @@ main {
 
     .store-section {
         background: url('../img/fondoprimario.jpg');
-        padding: 2em 1em;
+        padding: $spacing-large $spacing-normal;
         text-align: center;
 
         h2 {
-            color: #00fff0;
-            text-shadow: 3px 3px 1px #000;
-            font-size: 2.5em;
-            margin-bottom: 1em;
+            color: $color-secondary;
+            text-shadow: 3px 3px 1px $color-black;
+            font-size: $font-size-xlarge;
+            margin-bottom: $spacing-normal;
         }
 
         .products {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 2em;
+            gap: $spacing-large;
 
             .product {
-                background-color: #fff;
-                border: 1px solid #ddd;
-                padding: 1em;
+                background-color: $color-white;
+                border: 1px solid $color-border;
+                padding: $spacing-normal;
                 width: 200px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 0 10px rgba($color-black, 0.1);
                 text-align: center;
                 transition: transform 0.3s ease;
 
@@ -80,34 +71,26 @@ main {
                 }
 
                 h3 {
-                    margin: 0.5em 0;
+                    margin: $spacing-small 0;
                 }
 
                 .btn {
-                    display: inline-block;
-                    padding: 0.75em 1.5em;
-                    background-color: #ff6600;
-                    color: #fff;
-                    border-radius: 5px;
-                    margin-top: 1em;
-                    font-weight: 700;
-                    transition: background-color 0.4s ease;
-                    cursor: pointer;
+                    @include button($color-primary, $color-white);
+                    margin-top: $spacing-normal;
 
                     &:hover {
-                        background-color: #00fff0;
-                        color: #000;
+                        background-color: $color-secondary;
+                        color: $color-black;
                     }
                 }
             }
         }
     }
 
-
     .subscribe-section {
         display: flex;
         justify-content: center;
-        padding: 20px;
+        padding: $spacing-medium;
 
         .suscribe {
             display: flex;
@@ -117,7 +100,7 @@ main {
             img {
                 width: 50%;
                 height: auto;
-                margin-right: 20px;
+                margin-right: $spacing-medium;
             }
 
             div {
@@ -125,43 +108,36 @@ main {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding-left: 20px;
+                padding-left: $spacing-medium;
 
                 div {
-                    font-size: 24px;
-                    margin-bottom: 10px;
-                    color: #007bff;
+                    font-size: $font-size-large;
+                    margin-bottom: $spacing-normal;
+                    color: #007bff; // Considerar agregar esta variable de color si se usa en otros lugares
                 }
 
                 h2 {
-                    margin-bottom: 10px;
+                    margin-bottom: $spacing-normal;
                 }
 
                 p {
-                    margin-bottom: 10px;
+                    margin-bottom: $spacing-normal;
                 }
 
                 input {
                     flex: 1;
-                    padding: 10px;
-                    border: 1px solid #ccc;
+                    padding: $spacing-normal;
+                    border: 1px solid $color-border;
                     border-radius: 4px;
                 }
 
                 .btn {
-                    display: inline-block;
-                    padding: 0.75em 1.5em;
-                    background-color: #ff6600;
-                    color: #fff;
-                    border-radius: 5px;
-                    margin-top: 1em;
-                    font-weight: 700;
-                    transition: background-color 0.4s ease;
-                    cursor: pointer;
+                    @include button($color-primary, $color-white);
+                    margin-top: $spacing-normal;
 
                     &:hover {
-                        background-color: #00fff0;
-                        color: #000;
+                        background-color: $color-secondary;
+                        color: $color-black;
                     }
                 }
             }
