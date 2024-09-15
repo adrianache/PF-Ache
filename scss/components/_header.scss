@@ -1,56 +1,49 @@
-header {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $spacing-large;
     background-color: $color-black;
-    color: $color-white;
-    padding: $spacing-normal 0;
-    font-weight: 700;
 
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 $spacing-large;
-        background-color: $color-black;
-
-        .logo {
-            a {
-                font-size: $font-size-xlarge;
-                color: $color-white;
-
-                &:active {
-                    color: $color-secondary;
-                }
-            }
-
-            div {
-                font-size: $font-size-small;
-                position: relative;
-                left: 7rem;
-            }
-        }
-
-        .menu-toggle {
-            display: none;
-            font-size: $font-size-large;
+    .logo {
+        a {
+            font-size: $font-size-xlarge;
             color: $color-white;
-            background: none;
-            border: none;
-            cursor: pointer;
+
+            &:active {
+                color: $color-secondary;
+            }
         }
 
-        .nav-links {
-            display: flex;
-            gap: $spacing-medium;
+        div {
+            font-size: $font-size-small;
+            position: relative;
+            left: 7rem;
+        }
+    }
 
-            li {
-                a {
-                    color: $color-white;
-                    display: inline-block;
-                    transition: transform 0.3s ease;
+    .menu-toggle {
+        display: none;
+        font-size: $font-size-large;
+        color: $color-white;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
 
-                    &:hover {
-                        transform: scale(1.3);
-                        color: $color-secondary;
-                    }
+    .nav-links {
+        display: flex;
+        gap: $spacing-medium;
+
+        li {
+            a {
+                color: $color-white;
+                display: inline-block;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.3);
+                    color: $color-secondary;
                 }
             }
         }
