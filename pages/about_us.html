@@ -4,37 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Ropa Urbana</title>
+    <title>Quiénes Somos - Street Style | Estilo y Actitud Urbana</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/favicon-logo.jpg" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- ENCABEZADO -->
-    <a href="javascript:history.back()" class="back-arrow">
-        <i class="fas fa-arrow-left"></i> <!-- Icono de flecha hacia atrás -->
-    </a>
+    <header>
+        <!-- BARRA DE NAVEGACIÓN -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">Street Style</a>
+                <div>Tienda Urbana</div>
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./store.html">Tienda</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
+                <li><a href="./you.html">Ustedes</a></li>
+                <li><a id="cart-style" class="fas fa-shopping-cart" href="#" aria-label="Carrito de compras"></a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Sección Sobre Nosotros -->
+    <!-- sección sobre nosotros -->
     <main>
         <section class="about-section">
-            <div class="container">
+            <div class="container"> <!-- !cuidado: container aparece acá y en footer -->
                 <h1>Sobre Nosotros</h1>
                 <p>En <strong>Street Style</strong>, nos apasiona la moda urbana y creemos que la ropa es una forma
                     poderosa de expresión personal. Desde nuestros inicios en 2022, hemos trabajado incansablemente para
                     traer lo mejor del estilo callejero a quienes buscan algo más que una prenda de vestir: buscan una
                     identidad.</p>
 
-                <h3>Nuestra Misión</h3>
+                <h3>Nuestra Misión:</h3>
                 <p>Nuestra misión es <strong>inspirar y empoderar</strong> a las personas a través de la moda. Creemos
                     que cada persona es única y su estilo debe reflejar esa individualidad. Por eso, nos comprometemos a
                     ofrecer una selección de ropa y accesorios que no solo sigan las últimas tendencias, sino que
                     también sean de la más alta calidad.</p>
 
-                <h3>Lo Que Nos Hace Diferentes</h3>
+                <h3>Lo Que Nos Hace Diferentes:</h3>
                 <p><strong>Selección Curada</strong>: Cada artículo en nuestra tienda ha sido cuidadosamente
                     seleccionado por nuestro equipo de expertos en moda para asegurar que ofrecemos solo lo mejor.</p>
                 <p><strong>Calidad Superior</strong>: Nos asociamos con fabricantes de confianza que comparten nuestro
@@ -43,14 +59,15 @@
                     experiencia de compra intuitiva, rápida y segura, con un servicio al cliente que te acompaña en cada
                     paso del camino.</p>
 
-                <h3>Nuestro Equipo</h3>
+                <h3>Nuestro Equipo:</h3>
                 <p>Detrás de <strong>Street Style</strong> hay un equipo apasionado y diverso de diseñadores, estilistas
                     y profesionales de la moda, todos unidos por una misión común: <strong>hacer que cada cliente se
                         sienta especial y único</strong>. Creemos que la diversidad es nuestra fortaleza y trabajamos
                     juntos para traer una perspectiva fresca y auténtica a la moda urbana.</p>
 
-                <h3>Únete a Nuestra Comunidad</h3>
-                <p class="community">Más que una tienda, somos una comunidad. Te invitamos a seguirnos en nuestras redes
+                <h3>Únete a Nuestra Comunidad:</h3>
+                <p>
+                    Más que una tienda, somos una comunidad. Te invitamos a seguirnos en nuestras redes
                     sociales, donde compartimos las últimas tendencias, colaboraciones exclusivas y eventos especiales.
                     Juntos, estamos redefiniendo lo que significa el estilo urbano.</p>
             </div>
@@ -63,33 +80,36 @@
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                 <p class="mb-3 mb-md-0">&copy; 2024 Street Style, Tienda Urbana. Todos los derechos reservados.</p>
                 <ul class="social-links list-unstyled d-flex gap-3 mb-0 justify-content-center">
-                    <li><a href="#" class="fab fa-facebook-f text-white fs-3"></a></li>
-                    <li><a href="#" class="fab fa-instagram text-white fs-3"></a></li>
-                    <li><a href="#" class="fa-brands fa-x-twitter text-white fs-3"></a></li>
+                    <li><a href="#" class="fab fa-facebook-f text-white fs-3" aria-label="Facebook"></a></li>
+                    <li><a href="#" class="fab fa-instagram text-white fs-3" aria-label="Instagram"></a></li>
+                    <li><a href="#" class="fa-brands fa-x-twitter text-white fs-3" aria-label="Twitter"></a></li>
                 </ul>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const menuToggle = document.querySelector('.menu-toggle');
-                const navLinks = document.querySelector('.nav-links');
-    
-                menuToggle.addEventListener('click', function() {
-                    navLinks.classList.toggle('active');
-                });
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            // navLinks.classList.remove('active');
+
+            menuToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('active');
             });
-        </script>
+        });
+    </script>
+
 </body>
 
 </html>
