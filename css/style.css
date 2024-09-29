@@ -27,32 +27,24 @@ ul {
 
 /* barra de navegación */
 .navbar {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     padding: 0 2em;
     font-family: 'Lobster', cursive;
 }
 
-.navbar .logo span {
-    color: #00FFCC;
-}
 
 .logo a {
     font-size: 2.5em;
     color: #fff;
-    letter-spacing: 5px; /*!mediaquerie*/
 }
 
+.logo a span,
 .logo a:active {
     color: #00FFCC;
 }
 
 .logo div {
-    /* font-size: 0.8em; */
     position: relative;
-    left: 17rem;
-    /*! 3em en mediaquerie*/
+    left: 14rem;
     font-size: 1.2em;
 }
 
@@ -68,7 +60,6 @@ ul {
 .nav-links {
     display: flex;
     gap: 1.5em;
-    /*! eliminarlo en mediaquerie*/
     font-size: 1.5em;
     overflow: hidden;
 }
@@ -84,12 +75,12 @@ ul {
 }
 
 .nav-links li a span {
-    color: #ef48a1;
+    color: #EF48A1;
 }
 
 .nav-links a:hover {
     transform: scale(1.4);
-    color: #ef48a1;
+    color: #EF48A1;
 }
 
 #cart-style:hover {
@@ -97,9 +88,10 @@ ul {
 }
 
 
-/* Secciones */
+/* SECCIONES */
 
 /* sección principal */
+
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.4),
             rgba(0, 0, 0, 0.5)),
@@ -127,7 +119,7 @@ ul {
     margin: 1em 0;
 }
 
-/* botón */
+/* botón general */
 .btn {
     display: inline-block;
     padding: 0.75em 1.5em;
@@ -151,16 +143,6 @@ ul {
     border-radius: 0 0 5em 5em;
 }
 
-.store-section h2 {
-    color: rgba(255, 119, 255);
-    font-weight: 700;
-    text-shadow: 3px 3px 1px #000;
-    background-color: rgba(20, 255, 224, 0.7);
-    display: inline-block;
-    border-radius: 10px;
-    padding: 0 10px;
-}
-
 .store-section,
 .about-section,
 .contact-section,
@@ -176,6 +158,16 @@ ul {
     margin-bottom: 1em;
 }
 
+.store-section h2 {
+    color: #FF77FF;
+    font-weight: 700;
+    text-shadow: 3px 3px 1px #000;
+    background-color: rgba(20, 255, 224, 0.7);
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
 .products {
     display: flex;
     justify-content: center;
@@ -188,7 +180,7 @@ ul {
     border: 1px solid #ddd;
     padding: 1em;
     width: 350px;
-    box-shadow: 0 0 10px rgba(255, 119, 255);
+    box-shadow: 0 0 10px #FF77FF;
     text-align: center;
     transition: transform 0.5s ease;
     cursor: pointer;
@@ -196,11 +188,7 @@ ul {
 
 .product:hover {
     transform: translateY(-7px);
-    box-shadow: 0 0 10px rgb(20, 255, 224);
-}
-
-.product a {
-    background-color: rgba(255, 119, 255);
+    box-shadow: 0 0 10px #00FFCC;
 }
 
 .product img {
@@ -215,15 +203,18 @@ ul {
 .product p {
     font-size: 1.5em;
     font-weight: 700;
-    color: rgba(255, 119, 255);
+    color: #FF77FF;
+}
+
+.product a {
+    background-color: #FF77FF;
 }
 
 /* sección presentación */
 .about-preview {
     position: relative;
     text-align: center;
-    font-size: 25px;
-    max-width: 60%;
+    max-width: 70%;
     margin: 35px auto;
     padding: 35px 0;
     border-top: 2px solid rgba(73, 61, 61, 0.2);
@@ -232,14 +223,102 @@ ul {
 
 .about-preview h2 {
     color: rgba(27, 194, 172, 0.7);
-    font-weight: 700;
-    padding: 0 10px;
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
+    margin-bottom: 25px;
 }
 
+.about-preview p {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+/* sección suscripción */
+.subscribe-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.suscribe {
+    display: flex;
+    width: 70%;
+    /* width: 60%; */
+    max-width: 1200px;
+}
+
+.suscribe img {
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.suscribe div {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.suscribe div div {
+    font-size: 32px;
+    color: #FF1493;
+    margin-bottom: 20px;
+}
+
+.suscribe div h2 {
+    letter-spacing: 3px;
+}
+
+.suscribe div p {
+    letter-spacing: 2px;
+}
+
+.suscribe div h2,
+.suscribe div p {
+    margin-bottom: 10px;
+}
+
+.suscribe input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.suscribe button {
+    margin-bottom: 15px;
+}
+
+/* sección de la tienda con Grid System de Bootstrap */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #00FFCC;
+}
+
+.product-title {
+    font-weight: bold;
+}
+
+.product-description {
+    color: #666;
+}
 
 /* sección sobre nosotros */
 .about-section {
@@ -248,21 +327,14 @@ ul {
 }
 
 .about-section h1 {
-    font-size: 3rem;
-    color: #000;
-    /* background-color:#18cfab; */
-    padding: 20px;
-    border-radius: 15px;
+    font-size: 4rem;
+    text-shadow: 3px 3px 2px #ff6600;
+    font-family: 'Lobster', cursive;
 }
 
 .about-section h3 {
-    font-size: 2.3rem;
-    background-color:#ef48a1;
-    padding: 10px 15px;
-    border-radius: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    color: #fff;
-
+    font-size: 3rem;
+    text-shadow: 1px 1px 3px #00FFCC;
 }
 
 .about-section h1,
@@ -271,13 +343,12 @@ ul {
     margin-bottom: 1em;
     display: inline-block;
     text-align: center;
-    font-family: 'Lobster', cursive;
+    color: #000;
 }
 
 .about-section p {
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin-bottom: 1.5em;
-    line-height: 1.6;
     text-align: justify;
 }
 
@@ -317,7 +388,6 @@ ul {
     font-size: 36px;
 }
 
-
 .input-box {
     grid-column: span 1;
     /* Ocupa toda la columna en grid */
@@ -354,7 +424,6 @@ ul {
     border: none;
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    font-size: 16px;
 }
 
 /* sección de ubicación y contacto */
@@ -379,7 +448,7 @@ ul {
 .map-container {
     flex: 1;
     min-width: 300px;
-    height: 300px;
+    height: 350px;
     border-right: 1.5px solid #cccccc;
 }
 
@@ -394,78 +463,12 @@ ul {
 
 .contact-info p {
     margin: 10px 0;
-}
-
-/* sección suscripción */
-.subscribe-section {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.suscribe {
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.suscribe img {
-    width: 50%;
-    height: auto;
-    margin-right: 20px;
-    border-radius: 10px;
-}
-
-.suscribe>div {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 20px;
-}
-
-.suscribe>div>div {
-    font-size: 32px;
-    color: #FF1493;
-}
-
-.suscribe>div>div,
-.suscribe div h2,
-.suscribe div p {
-    margin-bottom: 10px;
-}
-
-.suscribe input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* sección tienda */
-.product-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
-.product-card:hover {
-    transform: scale(1.05);
-}
-
-.product-title {
-    font-weight: bold;
-}
-
-.product-description {
-    color: #666;
+    font-size: 20px;
 }
 
 /* sección de testimonios y preguntas frecuentes */
 .testimonial-section {
-    background-color: #fff;
+    background-color: #eee;
     padding: 3em 1em;
     text-align: center;
 }
@@ -517,10 +520,8 @@ ul {
 }
 
 .testimonial span {
-    display: block;
     font-weight: bold;
-    font-size: 1em;
-    margin-top: 0.5em;
+    font-size: 1.2em;
 }
 
 .faq {
@@ -538,29 +539,9 @@ ul {
 }
 
 .faq-item p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #333;
 }
-
-
-/*! Pie de página borrarr??*/
-/* .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2em;
-    flex-wrap: wrap;
-}
-
-.social-links {
-    display: flex;
-    gap: 1em;
-}
-
-.social-links li a {
-    transition: color 0.3s ease;
-} */
-
 
 /* Animaciones */
 @keyframes fadeIn {
@@ -574,15 +555,50 @@ ul {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
-    /* 995px */
+
+@media (max-width: 1195px) {
+
+    /* barra de navegación */
+    .logo a {
+        font-size: 2em;
+    }
+
+    .logo div {
+        left: 12rem;
+        font-size: 1.1em;
+    }
+
+    .nav-links {
+        gap: 0.6em;
+        font-size: 1.3em;
+    }
+
+    /* sección destacados */
+    .store-section h2 {
+        font-size: 2em;
+    }
+
+    .product {
+        width: 230px;
+    }
+
+    /* sección de testimonios y preguntas frecuentes */
+    .testimonial-wrapper h1 {
+        font-size: 2.1em;
+    }
+}
+
+@media (max-width: 860px) {
+
+    /* barra de navegación */
+    .menu-toggle {
+        display: block;
+    }
 
     .nav-links {
         display: none;
         flex-direction: column;
         width: 100%;
-        background: none;
-        position: relative;
         padding: 0;
     }
 
@@ -590,33 +606,22 @@ ul {
         display: flex;
     }
 
-    .menu-toggle {
-        display: block;
-    }
-
     .nav-links li {
-        margin: 0;
         text-align: center;
     }
 
     .nav-links li a {
-        padding: 1em;
-        display: block;
-        color: #fff;
-        text-decoration: none;
+        margin-top: 20px;
     }
 
-    .hero-section {
-        height: auto;
-        padding: 2em 1em;
+    /* sección principal */
+    .hero-section div h1 {
+        font-size: 2.2em;
     }
 
-    .hero-content h1 {
-        font-size: 2em;
-    }
-
-    .hero-content p {
-        font-size: 1em;
+    /* sección destacados */
+    .temporada {
+        display: none;
     }
 
     .products {
@@ -624,20 +629,47 @@ ul {
         align-items: center;
     }
 
+    .product {
+        width: 300px;
+    }
+
+    /* sección presentación */
+    .about-preview h2 {
+        font-size: 30px;
+    }
+
+    .about-preview p {
+        font-size: 20px;
+    }
+
+    /* sección suscripción */
     .subscribe-section .suscribe {
         flex-direction: column;
-        text-align: center;
         align-items: center;
     }
 
-    .subscribe-section .suscribe img {
+    .suscribe img {
         margin-bottom: 1rem;
     }
 
-    .subscribe-section .suscribe div {
-        text-align: center;
+    .suscribe div p {
+        display: none;
     }
 
+    /* sección sobre nosotros */
+    .about-section h1 {
+        font-size: 3rem;
+    }
+
+    .about-section h3 {
+        font-size: 2.2rem;
+    }
+
+    .about-section p {
+        font-size: 1.4em;
+    }
+
+    /* sección de ubicación y contacto */
     .contact-section2 {
         height: auto;
         padding: 1em;
@@ -650,25 +682,21 @@ ul {
 
     .map-container {
         width: 100%;
-        height: 300px;
-        border-right: none;
         border-bottom: 1.5px solid #cccccc;
-        flex: 2;
     }
 
     .contact-info {
         width: 100%;
         padding: 1em;
         text-align: center;
-        flex: 1;
     }
 
-    .testimonials {
-        flex-direction: column;
-        align-items: center;
-    }
-
+    /* sección de testimonios y preguntas frecuentes */
     .testimonial {
-        width: 80%;
+        width: 65%;
+    }
+
+    .faq-item p {
+        font-size: 1.3em;
     }
 }

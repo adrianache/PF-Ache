@@ -38,11 +38,12 @@
 
 
     <!-- SECCIONES -->
+
+    <!-- sección principal -->
     <main>
-        <!-- sección principal -->
         <section class="hero-section">
-            <div> <!-- class="hero-content" -->
-                <h1>Bienvenidos a Street Style Tienda Urbana</h1>
+            <div>
+                <h1>Bienvenidos a Street Style <br> Tienda Urbana</h1>
                 <p><strong>Moda callejera para todos los estilos</strong></p>
                 <a href="./pages/store.html" class="btn">Explorar Colección</a>
             </div>
@@ -50,25 +51,25 @@
 
         <!-- sección destacados -->
         <section class="store-section">
-            <h2>PRODUCTOS DESTACADOS DE TEMPORADA</h2>
+            <h2>PRODUCTOS DESTACADOS <span class="temporada">DE TEMPORADA</span></h2>
             <div class="products">
                 <div class="product">
-                    <img src="./img/sudadera2a.jpg" alt="Campera urbana estilo street wear" loading="lazy">
+                    <img src="./img/sudadera2a.jpg" alt="Sudadera de color naranja y negro" loading="lazy">
                     <h3>Sudadera Orange/Black </h3>
-                    <p>$1890</p>
-                    <a href="#" class="btn">Comprar</a>
+                    <p>$1990</p>
+                    <a href="./pages/store.html" class="btn">Comprar</a>
                 </div>
                 <div class="product">
-                    <img src="./img/jean3a.jpg" alt="Jean urbano con estilo oversize " loading="lazy">
+                    <img src="./img/jean3a.jpg" alt="Pantalón de jean/cargo" loading="lazy">
                     <h3>Pantalón Jean Cargo</h3>
                     <p>$2490</p>
-                    <a href="#" class="btn">Comprar</a>
+                    <a href="./pages/store.html" class="btn">Comprar</a>
                 </div>
                 <div class="product">
-                    <img src="./img/remera2a.jpg" alt="Buzo polar urbano para el frío" loading="lazy">
+                    <img src="./img/remera2a.jpg" alt="Remera de verano" loading="lazy">
                     <h3>Remera Verano '25</h3>
-                    <p>$2240</p>
-                    <a href="#" class="btn">Comprar</a>
+                    <p>$990</p>
+                    <a href="./pages/store.html" class="btn">Comprar</a>
                 </div>
             </div>
         </section>
@@ -89,7 +90,7 @@
                 <div>
                     <div class="fa-regular fa-envelope" aria-hidden="true"></div>
                     <h2>Suscríbete!</h2>
-                    <p>Y recibe todas nuestras novedades y descuentos</p>
+                    <p>Y recibe todas nuestras <strong>novedades y descuentos!</strong></p>
                     <form action="#" method="post">
                         <label for="email" class="visually-hidden">Correo electrónico</label>
                         <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
@@ -104,10 +105,9 @@
 
     <!-- PIE DE PÁGINA (con Bootstrap) -->
     <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
+        <div class="container-fluid">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                 <p class="mb-3 mb-md-0">&copy; 2024 Street Style, Tienda Urbana. Todos los derechos reservados.</p>
-
                 <ul class="social-links list-unstyled d-flex gap-3 mb-0 justify-content-center">
                     <li><a href="#" class="fab fa-facebook-f text-white fs-3" aria-label="Facebook"></a></li>
                     <li><a href="#" class="fab fa-instagram text-white fs-3" aria-label="Instagram"></a></li>
@@ -136,7 +136,6 @@
             const menuToggle = document.querySelector('.menu-toggle');
             const navLinks = document.querySelector('.nav-links');
 
-            // Asegúrate de que el menú esté cerrado al cargar la página
             // navLinks.classList.remove('active');
 
             menuToggle.addEventListener('click', function () {
