@@ -1,77 +1,79 @@
+/* sección principal */
 main {
     .hero-section {
-        background: linear-gradient(rgba(0, 0, 0, 0.4),
-                rgba(0, 0, 0, 0.5)),
+        background: linear-gradient($color-background-dark, $color-background-dark),
             url('../img/fondoprincipal.jpeg') no-repeat center center/cover fixed;
-        color: #fff;
+        color: $color-white;
         text-align: center;
         display: flex;
         align-items: center;
-        justify-content: center;
         height: 100vh;
+        border-radius: 0 0 $border-radius $border-radius;
 
-        .hero-content {
+        div {
             max-width: 600px;
             margin: 0 auto;
             animation: fadeIn 2s ease-in-out;
 
             h1 {
-                font-size: 3em;
+                font-size: $font-large;
             }
 
             p {
-                font-size: 1.2em;
-                margin: 1em 0;
+                font-size: $font-small;
+                margin: $spacing-small 0;
             }
 
             .btn {
-                display: inline-block;
-                padding: 0.75em 1.5em;
-                background-color: #ff6600;
-                color: #fff;
-                border-radius: 5px;
-                margin-top: 1em;
-                font-weight: 700;
-                transition: background-color 0.4s ease;
-                cursor: pointer;
+                @include button($color-primary, $color-white);
+                margin-top: $padding-normal;
 
                 &:hover {
-                    background-color: #00fff0;
-                    color: #000;
+                    background-color: $color-accent;
+                    color: $color-subtle;
                 }
             }
         }
     }
 
+    /* sección destacados */
     .store-section {
         background: url('../img/fondoprimario.jpg');
-        padding: 2em 1em;
+        border-radius: 0 0 5em 5em;
+        padding: $padding-normal $spacing-small;
         text-align: center;
 
         h2 {
-            color: #00fff0;
-            text-shadow: 3px 3px 1px #000;
-            font-size: 2.5em;
-            margin-bottom: 1em;
+            font-size: $font-medium;
+            margin-bottom: $spacing-small;
+            color: $color-accent;
+            font-weight: 700;
+            text-shadow: 3px 3px 1px $color-subtle;
+            background-color: rgba(20, 255, 224, 0.7);
+            display: inline-block;
+            border-radius: $border-radius;
+            padding: 0 10px;
         }
 
         .products {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 2em;
+            gap: $spacing-large;
 
             .product {
-                background-color: #fff;
+                background-color: $color-white;
                 border: 1px solid #ddd;
-                padding: 1em;
-                width: 200px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                padding: $spacing-small;
+                width: 350px;
+                box-shadow: 0 0 10px $color-accent;
                 text-align: center;
-                transition: transform 0.3s ease;
+                @include transition(transform, 0.5s, ease);
+                cursor: pointer;
 
                 &:hover {
-                    transform: translateY(-5px);
+                    transform: translateY(-7px);
+                    box-shadow: 0 0 10px $color-primary;
                 }
 
                 img {
@@ -80,88 +82,123 @@ main {
                 }
 
                 h3 {
-                    margin: 0.5em 0;
+                    margin: $spacing-small 0;
+                }
+
+                p {
+                    font-size: $font-medium;
+                    font-weight: 700;
+                    color: $color-accent;
+                }
+
+                a {
+                    background-color: $color-accent;
                 }
 
                 .btn {
-                    display: inline-block;
-                    padding: 0.75em 1.5em;
-                    background-color: #ff6600;
-                    color: #fff;
-                    border-radius: 5px;
-                    margin-top: 1em;
-                    font-weight: 700;
-                    transition: background-color 0.4s ease;
-                    cursor: pointer;
+                    @include button($color-primary, $color-white);
+                    margin-top: $padding-normal;
 
                     &:hover {
-                        background-color: #00fff0;
-                        color: #000;
+                        background-color: $color-accent;
+                        color: $color-subtle;
                     }
                 }
             }
         }
     }
 
+    /* sección presentación */
+    .about-preview {
+        position: relative;
+        text-align: center;
+        max-width: 70%;
+        margin: 35px auto;
+        padding: 35px 0;
+        border-top: 2px solid rgba(73, 61, 61, 0.2);
+        border-bottom: 2px solid rgba(73, 61, 61, 0.2);
 
+        h2 {
+            color: rgba(27, 194, 172, 0.7);
+            font-size: $font-large;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: $spacing-medium;
+        }
+
+        p {
+            font-size: 25px;
+            margin-bottom: $spacing-medium;
+        }
+    }
+
+    /* sección suscripción */
     .subscribe-section {
         display: flex;
         justify-content: center;
-        padding: 20px;
+        padding: $spacing-small;
+        margin-bottom: $spacing-small;
+        padding: $padding-normal $spacing-small;
+        text-align: center;
 
         .suscribe {
             display: flex;
-            width: 100%;
+            width: 70%;
             max-width: 1200px;
 
             img {
                 width: 50%;
                 height: auto;
                 margin-right: 20px;
+                border-radius: $border-radius;
             }
 
             div {
                 width: 50%;
+                height: auto;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 padding-left: 20px;
 
                 div {
-                    font-size: 24px;
-                    margin-bottom: 10px;
-                    color: #007bff;
+                    font-size: $font-medium;
+                    color: $color-heading;
+                    margin-bottom: $spacing-small;
                 }
 
                 h2 {
-                    margin-bottom: 10px;
+                    letter-spacing: 3px;
+                    font-size: $font-medium;
+                    margin-bottom: $spacing-small;
                 }
 
                 p {
+                    letter-spacing: 2px;
                     margin-bottom: 10px;
                 }
 
-                input {
-                    flex: 1;
-                    padding: 10px;
-                    border: 1px solid #ccc;
-                    border-radius: 4px;
-                }
+                form {
 
-                .btn {
-                    display: inline-block;
-                    padding: 0.75em 1.5em;
-                    background-color: #ff6600;
-                    color: #fff;
-                    border-radius: 5px;
-                    margin-top: 1em;
-                    font-weight: 700;
-                    transition: background-color 0.4s ease;
-                    cursor: pointer;
+                    input {
+                        flex: 1;
+                        padding: 12px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        margin-right: 15px;
+                    }
 
-                    &:hover {
-                        background-color: #00fff0;
-                        color: #000;
+                    .btn {
+                        @include button($color-primary, $color-white);
+                        margin-top: $padding-normal;
+                        margin-bottom: 15px;
+
+                        &:hover {
+                            background-color: $color-accent;
+                            color: $color-subtle;
+                        }
                     }
                 }
             }

@@ -1,8 +1,3 @@
-// clases reutilizadas y los estilos generales
-// las clases particulares que modifican algo de bootstrap también van acá..
-//  también van reset, importación de fonts, etc..
-
-
 /* Estilos generales */
 * {
     margin: 0;
@@ -15,6 +10,13 @@ body {
     background-color: #f4f4f4 !important;
 }
 
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1em 0;
+    font-weight: 700;
+}
+
 a {
     text-decoration: none;
 }
@@ -23,7 +25,9 @@ ul {
     list-style: none;
 }
 
-// clases reutilizables
+// clases reutilizables:
+
+/* botón general */
 .btn {
     display: inline-block;
     padding: 0.75em 1.5em;
@@ -36,25 +40,7 @@ ul {
     cursor: pointer;
 
     &:hover {
-        background-color: #00fff0;
+        background-color: #00FFCC;
         color: #000;
     }
-}
-
-.back-arrow {
-    position: absolute;
-    top: 1em;
-    left: 1em;
-    font-size: 1.5em;
-    color: #fff;
-    padding: 0.25em;
-    cursor: pointer;
-    background: #2b2828;
-    border-radius: 50%;
-    width: 2.5em;
-    height: 2.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
 }

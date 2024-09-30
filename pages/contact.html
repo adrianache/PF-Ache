@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Ropa Urbana</title>
+    <title>Contáctanos - Street Style | Moda Urbana en un Solo Click</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- <link rel="stylesheet" href="../css/estilos.css"> -->
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/favicon-logo.jpg" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 </head>
@@ -18,26 +19,27 @@
         <!-- BARRA DE NAVEGACIÓN -->
         <nav class="navbar">
             <div class="logo">
-                <a href="../index.html">Street Style</a>
+                <a href="../index.html"><span>S</span>treet <span>S</span>tyle</a>
                 <div>Tienda Urbana</div>
             </div>
-            <button class="menu-toggle">
+            <button class="menu-toggle" aria-label="Abrir menú">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-links">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./store.html">Tienda</a></li>
-                <li><a href="./you.html">Ustedes</a></li>
-                <li><a href="./about_us.html">Nosotros</a></li>
-                <li><a id="cart-style" class="fas fa-shopping-cart" href="#"></a></li>
+                <li><a href="../index.html"><span>I</span>nicio</a></li>
+                <li><a href="./store.html"><span>T</span>ienda</a></li>
+                <li><a href="./you.html"><span>U</span>stedes</a></li>
+                <li><a href="./about_us.html"><span>N</span>osotros</a></li>
+                <li><a id="cart-style" class="fas fa-shopping-cart" href="#" aria-label="Carrito de compras"></a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- sección de contacto -->
     <main>
         <section class="contact-section">
             <div class="wrapper">
-                <form action="">
+                <form action="#">
                     <h1>Contáctanos:</h1>
                     <div class="input-box">
                         <input class="input" type="text" placeholder="Nombre" required>
@@ -55,18 +57,20 @@
         </section>
     </main>
 
+    <!-- sección de ubicación y contacto -->
     <section class="contact-section2">
         <div class="info-container">
             <div class="map-container">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104864.45619620918!2d-56.22473777543359!3d-34.90590383813507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a1d3a4f5dcd905%3A0x26a43c72593a349f!2sMontevideo%2C%20Uruguay!5e0!3m2!1ses!2s!4v1663599650011!5m2!1ses!2s"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1636.0464446267927!2d-56.181649345611795!3d-34.90411835705477!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1727400460016!5m2!1ses-419!2suy"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
             <div class="contact-info">
-                <h2>Datos de Contacto</h2>
-                <p><strong>Dirección:</strong> Calle Falsa 123, Montevideo, Uruguay</p>
-                <p><strong>Teléfono:</strong> +598 623389**</p>
+                <h2>Datos de Contacto:</h2>
+                <p><strong>Dirección:</strong> Minas 1427, Montevideo, Uruguay</p>
+                <p><strong>Teléfono:</strong> +598 92756699</p>
                 <p><strong>Email:</strong> streetstyle08@gmail.com</p>
                 <p><strong>Horario:</strong> Lunes a Viernes de 09:00hs a 18:00hs</p>
             </div>
@@ -77,22 +81,20 @@
 
     <!-- PIE DE PÁGINA (con Bootstrap) -->
     <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
+        <div class="container-fluid">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                 <p class="mb-3 mb-md-0">&copy; 2024 Street Style, Tienda Urbana. Todos los derechos reservados.</p>
                 <ul class="social-links list-unstyled d-flex gap-3 mb-0 justify-content-center">
-                    <li><a href="#" class="fab fa-facebook-f text-white fs-3"></a></li>
-                    <li><a href="#" class="fab fa-instagram text-white fs-3"></a></li>
-                    <li><a href="#" class="fa-brands fa-x-twitter text-white fs-3"></a></li>
+                    <li><a href="#" class="fab fa-facebook-f text-white fs-3" aria-label="Facebook"></a></li>
+                    <li><a href="#" class="fab fa-instagram text-white fs-3" aria-label="Instagram"></a></li>
+                    <li><a href="#" class="fa-brands fa-x-twitter text-white fs-3" aria-label="Twitter"></a></li>
                 </ul>
             </div>
         </div>
     </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -101,10 +103,18 @@
         crossorigin="anonymous"></script>
 
     <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function () {
-            document.querySelector('.nav-links').classList.toggle('active');
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            // navLinks.classList.remove('active');
+
+            menuToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('active');
+            });
         });
     </script>
+
 </body>
 
 </html>

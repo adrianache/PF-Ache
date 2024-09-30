@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Ropa Urbana</title>
+    <title>Street Style - Tienda web de Ropa Urbana | Moda Callejera</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="./css/estilos.css"> --> <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css"> <!-- CSS -->
     <link rel="shortcut icon" href="./img/favicon-logo.jpg" type="image/x-icon"> <!-- Favicon -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
@@ -17,32 +18,33 @@
 <body>
     <!-- ENCABEZADO -->
     <header>
-        <!-- BARRA DE NAVEGACIÓN -->
+        <!-- barra de navegación -->
         <nav class="navbar">
             <div class="logo">
-                <a href="./index.html">Street Style</a>
+                <a href="./index.html"><span>S</span>treet <span>S</span>tyle</a>
                 <div>Tienda Urbana</div>
             </div>
-            <button class="menu-toggle"> <!-- Botón de menú (hamburger) para móviles -->
+            <button class="menu-toggle" aria-label="Abrir menú">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-links">
-                <li><a href="./pages/store.html">Tienda</a></li>
-                <li><a href="./pages/contact.html">Contacto</a></li>
-                <li><a href="./pages/you.html">Ustedes</a></li>
-                <li><a href="./pages/about_us.html">Nosotros</a></li>
-                <li><a id="cart-style" class="fas fa-shopping-cart" href="#"></a></li> <!-- ícono del carrito -->
+                <li><a href="./pages/store.html"><span>T</span>ienda</a></li>
+                <li><a href="./pages/contact.html"><span>C</span>ontacto</a></li>
+                <li><a href="./pages/you.html"><span>U</span>stedes</a></li>
+                <li><a href="./pages/about_us.html"><span>N</span>osotros</a></li>
+                <li><a id="cart-style" class="fas fa-shopping-cart" href="#" aria-label="Carrito de compras"></a></li>
             </ul>
         </nav>
     </header>
 
 
     <!-- SECCIONES -->
+
+    <!-- sección principal -->
     <main>
-        <!-- sección principal -->
         <section class="hero-section">
-            <div class="hero-content">
-                <h1>Bienvenidos a <br> Tienda Urbana</h1>
+            <div>
+                <h1>Bienvenidos a Street Style <br> Tienda Urbana</h1>
                 <p><strong>Moda callejera para todos los estilos</strong></p>
                 <a href="./pages/store.html" class="btn">Explorar Colección</a>
             </div>
@@ -50,39 +52,49 @@
 
         <!-- sección destacados -->
         <section class="store-section">
-            <h2>PRODUCTOS DESTACADOS</h2>
+            <h2>PRODUCTOS DESTACADOS <span class="temporada">DE TEMPORADA</span></h2>
             <div class="products">
                 <div class="product">
-                    <img src="./img/camperaurbana.avif" alt="imagen de una campera urbana">
-                    <h3>Campera Urbana</h3>
-                    <p>$1890</p>
-                    <a href="#" class="btn">Comprar</a>
+                    <img src="./img/sudadera2a.jpg" alt="Sudadera de color naranja y negro" loading="lazy">
+                    <h3>Sudadera Orange/Black </h3>
+                    <p>$1990</p>
+                    <a href="./pages/store.html" class="btn">Comprar</a>
                 </div>
                 <div class="product">
-                    <img src="./img/jeanurbano.jpg" alt="imagen de un Jean Urbano">
-                    <h3>Jean Urbano</h3>
+                    <img src="./img/jean3a.jpg" alt="Pantalón de jean/cargo" loading="lazy">
+                    <h3>Pantalón Jean Cargo</h3>
                     <p>$2490</p>
-                    <a href="#" class="btn">Comprar</a>
+                    <a href="./pages/store.html" class="btn">Comprar</a>
                 </div>
                 <div class="product">
-                    <img src="./img/buzopolarurbano.jpg" alt="imagen de un Buzo Polar Urbano">
-                    <h3>Buzo Polar Urbano</h3>
-                    <p>$2240</p>
-                    <a href="#" class="btn">Comprar</a>
+                    <img src="./img/remera2a.jpg" alt="Remera de verano" loading="lazy">
+                    <h3>Remera Verano '25</h3>
+                    <p>$990</p>
+                    <a href="./pages/store.html" class="btn">Comprar</a>
                 </div>
             </div>
         </section>
 
-        <!-- sección suscribirse -->
+        <!-- sección presentación -->
+        <section class="about-preview">
+            <h2>Sobre Street Style</h2>
+            <p>En Street Style, nos apasiona la moda urbana y la cultura callejera. Ofrecemos una cuidadosa selección de
+                prendas y accesorios que reflejan el auténtico espíritu del street wear. Desde camisetas gráficas hasta
+                zapatillas de edición limitada, tenemos todo lo que necesitas para expresar tu estilo único.</p>
+            <a href="./pages/about_us.html" class="btn">Conocé más sobre nosotros</a>
+        </section>
+
+        <!-- sección suscripción -->
         <section class="subscribe-section">
             <div class="suscribe">
-                <img src="./img/subscribe.webp" alt="sección de suscripción">
+                <img src="./img/subscribe.jpg" alt="Imagen representativa de suscripción a newsletter" loading="lazy">
                 <div>
-                    <div class="fa-regular fa-envelope"></div> <!-- ícono del sobre -->
+                    <div class="fa-regular fa-envelope" aria-hidden="true"></div>
                     <h2>Suscríbete!</h2>
-                    <p>Y recibe todas nuestras novedades y descuentos</p>
-                    <form action="#">
-                        <input type="email" placeholder="Correo electrónico" required>
+                    <p>Y recibe todas nuestras <strong>novedades y descuentos!</strong></p>
+                    <form action="#" method="post">
+                        <label for="email" class="visually-hidden">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
                         <button type="submit" class="btn">SUSCRIBIRME</button>
                     </form>
                 </div>
@@ -94,14 +106,13 @@
 
     <!-- PIE DE PÁGINA (con Bootstrap) -->
     <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
+        <div class="container-fluid">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                 <p class="mb-3 mb-md-0">&copy; 2024 Street Style, Tienda Urbana. Todos los derechos reservados.</p>
                 <ul class="social-links list-unstyled d-flex gap-3 mb-0 justify-content-center">
-                    <li><a href="#" class="fab fa-facebook-f text-white fs-3"></a></li> <!-- ícono de Facebook -->
-                    <li><a href="#" class="fab fa-instagram text-white fs-3"></a></li> <!-- ícono de Instagram -->
-                    <li><a href="#" class="fa-brands fa-x-twitter text-white fs-3"></a></li>
-                    <!-- ícono de X (ex-Twitter) -->
+                    <li><a href="#" class="fab fa-facebook-f text-white fs-3" aria-label="Facebook"></a></li>
+                    <li><a href="#" class="fab fa-instagram text-white fs-3" aria-label="Instagram"></a></li>
+                    <li><a href="#" class="fa-brands fa-x-twitter text-white fs-3" aria-label="Twitter"></a></li>
                 </ul>
             </div>
         </div>
@@ -109,8 +120,8 @@
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script> <!-- Bootstrap JS Bundle -->
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eHz" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS Bundle -->
     <!-- Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -122,8 +133,15 @@
 
     <!-- Toggle Navigation -->
     <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function () {
-            document.querySelector('.nav-links').classList.toggle('active');
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            // navLinks.classList.remove('active');
+
+            menuToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('active');
+            });
         });
     </script>
 

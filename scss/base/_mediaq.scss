@@ -1,48 +1,74 @@
+/* Media Queries */
 
+@media (max-width: 1195px) {
 
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: none;
-        position: relative;
-        padding: 0;
-
-        &.active {
-            display: flex;
-        }
-
-        li {
-            margin: 0;
-            text-align: center;
-
-            a {
-                padding: 1em;
-                display: block;
-                color: $white;
-                text-decoration: none;
-            }
-        }
+    /* barra de navegación */
+    .logo a {
+        font-size: $font-medium;
     }
 
+    .logo div {
+        left: 12rem;
+        font-size: $font-xsmall;
+    }
+
+    .nav-links {
+        gap: $spacing-small;
+        font-size: 1.3em;
+    }
+
+    /* sección destacados */
+    .store-section h2 {
+        font-size: $font-medium;
+    }
+
+    .product {
+        width: 230px;
+    }
+
+    /* sección de testimonios y preguntas frecuentes */
+    .testimonial-wrapper h1 {
+        font-size: 2.1em;
+    }
+}
+
+@media (max-width: 860px) {
+
+    /* barra de navegación */
     .menu-toggle {
         display: block;
     }
 
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .nav-links li a {
+        margin-top: $spacing-small;
+    }
+
+    /* sección principal */
     .hero-section {
-        height: auto;
-        padding: 2em $padding-responsive;
+        border-radius: 0;
+    }
+    .hero-section div h1 {
+        font-size: $font-medium;
+    }
 
-        .hero-content {
-            h1 {
-                font-size: 2em;
-            }
-
-            p {
-                font-size: 1em;
-            }
-        }
+    /* sección destacados */
+    .temporada {
+        display: none;
     }
 
     .products {
@@ -50,51 +76,74 @@
         align-items: center;
     }
 
+    .product {
+        width: 300px;
+    }
+
+    /* sección presentación */
+    .about-preview h2 {
+        font-size: 30px;
+    }
+
+    .about-preview p {
+        font-size: 20px;
+    }
+
+    /* sección suscripción */
     .subscribe-section .suscribe {
         flex-direction: column;
-        text-align: center;
         align-items: center;
-
-        img {
-            margin-bottom: 1rem;
-        }
-
-        div {
-            text-align: center;
-        }
     }
 
+    .suscribe img {
+        margin-bottom: $spacing-small;
+    }
+
+    .suscribe div p {
+        display: none;
+    }
+
+    /* sección sobre nosotros */
+    .about-section h1 {
+        font-size: $font-large;
+    }
+
+    .about-section h3 {
+        font-size: 2.2rem;
+    }
+
+    .about-section p {
+        font-size: 1.4em;
+    }
+
+    /* sección de ubicación y contacto */
     .contact-section2 {
         height: auto;
-        padding: $padding-responsive;
-
-        .info-container {
-            flex-direction: column;
-            width: 100%;
-
-            .map-container {
-                width: 100%;
-                height: 300px;
-                border-right: none;
-                border-bottom: 1.5px solid $grey-border;
-                flex: 2;
-            }
-
-            .contact-info {
-                width: 100%;
-                padding: $padding-responsive;
-                text-align: center;
-                flex: 1;
-            }
-        }
+        padding: $spacing-small;
     }
 
-    .testimonials {
+    .info-container {
         flex-direction: column;
-        align-items: center;
+        width: 100%;
+    }
 
-        .testimonial {
-            width: 80%;
-        }
+    .map-container {
+        width: 100%;
+        border-bottom: 1.5px solid #cccccc;
+    }
+
+    .contact-info {
+        width: 100%;
+        padding: $spacing-small;
+        text-align: center;
+    }
+
+    /* sección de testimonios y preguntas frecuentes */
+    .testimonial {
+        width: 65%;
+    }
+
+    .faq-item p {
+        font-size: 1.3em;
     }
 }

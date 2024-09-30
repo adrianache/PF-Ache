@@ -1,56 +1,56 @@
-header {
-    background-color: #000;
-    color: #fff;
-    padding: 1em 0;
-    font-weight: 700;
+/* barra de navegación */
+.navbar {
+    padding: 0 $spacing-medium;
+    font-family: 'Lobster', cursive;
 
-    .navbar {
+    .logo {
+        a {
+            font-size: $font-large;
+            color: $color-white;
+
+            span,
+            &:active {
+                color: $color-primary;
+            }
+        }
+
+        div {
+            position: relative;
+            left: 14rem;
+            font-size: $font-small;
+        }
+    }
+
+    .menu-toggle {
+        display: none;
+        font-size: $font-medium;
+        color: $color-white;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .nav-links {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 2em;
-        background-color: #000;
+        gap: $spacing-medium;
+        font-size: $font-medium;
+        overflow: hidden;
 
-        .logo {
+        li {
+            margin: 0 $spacing-small;
+
             a {
-                font-size: 2em;
-                color: #fff;
+                color: $color-white;
+                display: inline-block;
+                @include transition(transform, 0.5s, ease);
 
-                &:active {
-                    color: #00fff0;
+                span {
+                    color: $color-accent;
                 }
-            }
 
-            div {
-                font-size: 0.8em;
-                position: relative;
-                left: 7rem;
-            }
-        }
-
-        .menu-toggle {
-            display: none;
-            font-size: 1.5em;
-            color: #fff;
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 1.5em;
-
-            li {
-                a {
-                    color: #fff;
-                    display: inline-block;
-                    transition: transform 0.3s ease;
-
-                    &:hover {
-                        transform: scale(1.3);
-                        color: #00fff0;
-                    }
+                &:hover {
+                    @include transform-scale(1.4);
+                    color: $color-accent;
                 }
             }
         }

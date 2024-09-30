@@ -1,38 +1,32 @@
+/* sección de la tienda con Grid System de Bootstrap */
 .product-card {
     border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    transition: transform 0.3s ease;
+    border-radius: $border-radius;
+    padding: $spacing-small;
+    @include transition(transform, 0.3s, ease);
+    cursor: pointer;
 
     &:hover {
-        transform: scale(1.05);
+        @include transform-scale(1.05);
+        box-shadow: 0 0 5px $color-primary;
     }
 
     div {
         .product-title {
-            font-size: 1.2rem;
             font-weight: bold;
         }
 
         .product-description {
-            font-size: 0.9rem;
-            color: #666;
+            color: $color-subtle;
         }
 
         .btn {
-            display: inline-block;
-            padding: 0.75em 1.5em;
-            background-color: #ff6600;
-            color: #fff;
-            border-radius: 5px;
-            margin-top: 1em;
-            font-weight: 700;
-            transition: background-color 0.4s ease;
-            cursor: pointer;
+            @include button($color-primary, $color-white);
+            margin-top: $spacing-normal;
 
             &:hover {
-                background-color: #00fff0;
-                color: #000;
+                background-color: $color-accent;
+                color: $color-subtle;
             }
         }
     }
