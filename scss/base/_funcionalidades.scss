@@ -1,7 +1,51 @@
-//  aca lo de "sass 2" como bucles, variables, funciones y demás..
+// Variables:
 
-// VARIABLES:
-// mediaqueries
-$white: #fff;
-$grey-border: #cccccc;
-$padding-responsive: 1em;
+// Colors
+$color-white: #fff;
+$color-primary: #00FFCC;
+$color-accent: #EF48A1;
+$color-heading: #FF1493;
+$color-subtle: #333;
+$color-background-light: #f4f4f4;
+$color-background-dark: rgba(0, 0, 0, 0.5);
+$color-orange: #ff6600;
+
+// Fonts
+$font-large: 4rem;
+$font-medium: 3rem;
+$font-small: 1.2em;
+$font-xsmall: 1em;
+
+// Spacing
+$spacing-large: 3em;
+$spacing-medium: 1.5em;
+$spacing-small: 1em;
+$padding-normal: 2em;
+
+// Other
+$box-shadow-light: 0 0 10px rgba(0, 0, 0, 0.1);
+$border-radius: 10px;
+
+// Mixins:
+@mixin transition($property, $time, $ease) {
+  transition: $property $time $ease;
+}
+
+@mixin transform-scale($scale) {
+  transform: scale($scale);
+}
+
+@mixin button($background, $color) {
+  background-color: $background;
+  color: $color;
+  padding: $spacing-small $spacing-medium;
+  border-radius: $border-radius;
+  border: none;
+  cursor: pointer;
+  font-size: $font-small;
+  @include transition(all, 0.3s, ease-in-out);
+  &:hover {
+    @include transform-scale(1.1);
+  }
+}
+

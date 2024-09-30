@@ -615,6 +615,10 @@ ul {
     }
 
     /* sección principal */
+    .hero-section {
+        border-radius: 0;
+    }
+
     .hero-section div h1 {
         font-size: 2.2em;
     }

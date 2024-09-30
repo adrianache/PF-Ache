@@ -1,32 +1,36 @@
-.back-arrow {
-    @include back-arrow;
-}
-
+/* sección sobre nosotros */
 main {
     .about-section {
-        padding: $spacing-xlarge $spacing-normal;
+        background-color: $color-background-light;
+        padding: $spacing-large;
         text-align: center;
-        background-color: $color-background;
 
         .container {
             h1 {
-                font-size: $font-size-xxlarge;
-                color: $color-primary;
-                margin-bottom: $spacing-normal;
+                font-size: $font-large;
+                text-shadow: 3px 3px 2x $color-orange;
+                font-family: 'Lobster', cursive;
+                margin-top: $spacing-medium;
+                margin-bottom: $spacing-small;
+                display: inline-block;
+                text-align: center;
+                color: $color-subtle;
             }
 
             p {
-                font-size: $font-size-medium;
-                color: $color-text;
+                font-size: 1.7em;
                 margin-bottom: $spacing-medium;
-                line-height: 1.6;
                 text-align: justify;
             }
 
             h3 {
-                font-size: $font-size-xlarge;
-                color: $color-primary;
-                margin-bottom: $spacing-normal;
+                font-size: $font-medium;
+                text-shadow: 1px 1px 3px $color-primary;
+                margin-top: $spacing-medium;
+                margin-bottom: $spacing-small;
+                display: inline-block;
+                text-align: center;
+                color: $color-subtle;
             }
         }
     }
