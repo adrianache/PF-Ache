@@ -22,7 +22,6 @@
 
         .btn {
             @include button($color-primary, $color-white);
-            margin-top: $spacing-normal;
 
             &:hover {
                 background-color: $color-accent;
